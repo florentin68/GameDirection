@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Ombre subtile sous l'icône conservée depuis le brouillon -->
+    <path
+        android:fillColor="#25000000"
+        android:pathData="M54,54m-40,0a40,40 0 1,1 80,0a40,40 0 1,1 -80,0" />
+
+    <!-- Grand arc englobant sur la gauche (Couleur Jaune) -->
+    <path
+        android:strokeColor="#FFB300"
+        android:strokeWidth="6"
+        android:strokeLineCap="butt"
+        android:fillColor="#00000000"
+        android:pathData="M 88,32 A 40,40 0 0,0 14,54 A 40,40 0 0,0 88,76" />
+
+    <!-- Bout de Flèche Supérieure (Pointe vers le bas en direction du centre) -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M 76,30 L 100,30 L 88,46 Z" />
+
+    <!-- Bout de Flèche Inférieure (Pointe vers le haut en direction du centre) -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M 76,78 L 100,78 L 88,62 Z" />
+
+    <!-- Éventail de 3 cartes stylisées (Génération par pivot central) -->
+
+    <!-- Carte Gauche (Bleue) inclinée à -25 degrés -->
+    <group android:pivotX="54" android:pivotY="68" android:rotation="-25">
+        <path android:fillColor="#FAFAFA" android:strokeColor="#BDBDBD" android:strokeWidth="1" android:pathData="M 44,36 h 20 v 32 h -20 z" />
+        <path android:fillColor="#2196F3" android:pathData="M 46,38 h 16 v 28 h -16 z" />
+        <path android:fillColor="#FFFFFF" android:pathData="M 50,44 h 8 v 16 h -8 z" />
+    </group>
+
+    <!-- Carte Droite (Verte) inclinée à +25 degrés -->
+    <group android:pivotX="54" android:pivotY="68" android:rotation="25">
+        <path android:fillColor="#FAFAFA" android:strokeColor="#BDBDBD" android:strokeWidth="1" android:pathData="M 44,36 h 20 v 32 h -20 z" />
+        <path android:fillColor="#4CAF50" android:pathData="M 46,38 h 16 v 28 h -16 z" />
+        <path android:fillColor="#FFFFFF" android:pathData="M 50,44 h 8 v 16 h -8 z" />
+    </group>
+
+    <!-- Carte Centrale (Rouge) droite, placée au-dessus des autres -->
+    <group android:pivotX="54" android:pivotY="68" android:rotation="0">
+        <!-- Ajout d'une ombre portée propre pour détacher la carte centrale -->
+        <path android:fillColor="#20000000" android:pathData="M 43,37 h 22 v 32 h -22 z" />
+        <path android:fillColor="#FAFAFA" android:strokeColor="#BDBDBD" android:strokeWidth="1" android:pathData="M 44,36 h 20 v 32 h -20 z" />
+        <path android:fillColor="#F44336" android:pathData="M 46,38 h 16 v 28 h -16 z" />
+        <path android:fillColor="#FFFFFF" android:pathData="M 50,44 h 8 v 16 h -8 z" />
+    </group>
+
+</vector>
